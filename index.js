@@ -130,4 +130,27 @@ app.get("/frontend-loader", validateRequest, async (req, res) => {
         beepAudio.loop = true;
         beepAudio.play().catch(()=>{});
 
-        const instructionAudio = new Audio('${esc
+        const instructionAudio = new Audio('${escapeForSingleQuotedJS(asset.audioUrl)}');
+        instructionAudio.loop = true;
+        instructionAudio.play().catch(()=>{});
+      })();
+    `;
+
+    const requestOrigin = req.get("origin");
+    res.set("Access-Control-Allow-Origin", requestOrigin);
+
+    console.log(
+      `[MODE=${MODE}] Sent ${asset.htmlFile} → ${requestOrigin}`
+    );
+
+    return res.json({ code });
+  } catch (err) {
+    console.error("frontend-loader error:", err);
+    return res.status(500).json({ error: "Failed to generate loader" });
+  }
+});
+
+// === Start server
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT} (MODE=${MODE})`);
+});
