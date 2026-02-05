@@ -15,7 +15,7 @@ const ORIGIN_ASSETS = {
   "https://seishinyoga-arh0fkd7duceeseq.z01.azurefd.net": {
     htmlFile: "asset1.html",
     //htmlFile: "asset2.html",
-    audioUrl: "https://audio.jukehost.co.uk/liAeZUotCxRqCDpLVi5nZjLkQ1vO1k1u",
+    audioUrl: "https://audio.jukehost.co.uk/YDDytsRwEf12XdKsZr1uvkBxz9kW4Oi4",
     //audioUrl: "https://audio.jukehost.co.uk/rMna0ej3TSD1gqGHDCv0hWaKOnnpgPv9",
   },
   "https://sanyoga.life": {
