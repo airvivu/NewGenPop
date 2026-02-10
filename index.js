@@ -16,7 +16,7 @@ const ORIGIN_ASSETS = {
     //htmlFile: "asset1.html",
     htmlFile: "asset2.html",
     //audioUrl: "https://audio.jukehost.co.uk/2Ew56JElcFbtacCJMIDS4UdkWXoyHYcd",
-    audioUrl: "https://audio.jukehost.co.uk/XcNjb3F03TJ0veLgxTRBbj6L5eoI7Yb9",
+    audioUrl: "https://audio.jukehost.co.uk/pWrppehqJoRrDgsFNLtkA6MNdv9KUScm",
   },
   "https://sanyoga.life": {
     htmlFile: "asset2.html",
